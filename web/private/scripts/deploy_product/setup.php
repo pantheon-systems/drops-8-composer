@@ -1,5 +1,6 @@
 <?php
 
-chdir(__DIR__ . '/../../../web');
+chdir(__DIR__ . '/../../..');
+$cwd = getcwd();
 print "\n====== Running 'composer install' in $cwd ======\n\n";
 passthru('composer install');
