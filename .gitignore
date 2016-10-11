@@ -1,9 +1,3 @@
-# We omit composer.lock from the upstream so that the user does not get
-# conflicts when they update on the dashboard. However, maybe this feature
-# will not be used. We might want to have the user commit their composer.lock
-# which could be done with -f. Strategy tbd.
-composer.lock
-
 # Ignore Drupal's file directory
 web/sites/default/files
 
