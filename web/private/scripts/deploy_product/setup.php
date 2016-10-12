@@ -6,4 +6,4 @@ passthru('printenv');
 chdir(__DIR__ . '/../../../..');
 $cwd = getcwd();
 print "\n====== Running 'composer install' in $cwd ======\n\n";
-passthru('composer install');
+passthru('composer -vvv install  2>&1');
