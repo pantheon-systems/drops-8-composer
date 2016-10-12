@@ -15,3 +15,7 @@ passthru('composer drupal-scaffold  2>&1');
 
 print "\n====== Running 'git status' ======\n\n";
 passthru('git status  2>&1');
+
+print "\n====== Use the apcu hammer =======\n\n";
+apcu_delete('skip_resurrection_check');
+apcu_store('database_is_empty', 'ok', 300);
