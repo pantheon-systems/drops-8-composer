@@ -1,5 +1,8 @@
 <?php
 
+print "\n====== Sleep for a minute. (phpversion: " . phpversion() . ") ======\n\n";
+sleep(60);
+
 chdir(getenv('HOME') . '/code');
 $cwd = getcwd();
 
