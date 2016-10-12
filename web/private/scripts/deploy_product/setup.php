@@ -1,12 +1,14 @@
 <?php
 
-print "\n====== Sleep for a minute. (phpversion: " . phpversion() . ") ======\n\n";
+$version = phpversion();
+print "\n====== Sleep for a minute. (phpversion: $version) ======\n\n";
 sleep(60);
 
 chdir(getenv('HOME') . '/code');
 $cwd = getcwd();
 
 print "\n====== Running 'composer install' in $cwd ======\n\n";
+exit(0);
 passthru('composer install  2>&1');
 
 print "\n====== Running 'composer drupal-scaffold' ======\n\n";
