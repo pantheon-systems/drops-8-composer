@@ -6,7 +6,7 @@ passthru('printenv');
 chdir(__DIR__ . '/../../../..');
 $cwd = getcwd();
 print "\n====== Running 'composer install' in $cwd ======\n\n";
-passthru('composer -vvv install  2>&1');
+passthru('composer install  2>&1');
 
 print "\n====== Running 'git status' in $cwd ======\n\n";
 passthru('git status  2>&1');
