@@ -1,5 +1,5 @@
 api_version: 1
-php_version: 5.6
+php_version: 5.5
 web_docroot: true
 workflows:
   deploy_product:
