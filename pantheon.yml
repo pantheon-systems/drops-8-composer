@@ -7,4 +7,8 @@ workflows:
       -
         type: webphp
         description: 'Run composer install'
-        script: private/scripts/deploy_product/setup.php
+        script: private/scripts/deploy_product/composer-install.php
+      -
+        type: webphp
+        description: 'Run composer drupal-scaffold'
+        script: private/scripts/deploy_product/drupal-scaffold.php
