@@ -13,7 +13,7 @@ Create a custom upstream for this project following the instructions in the [Pan
 ### Manual Setup
 
 Start off by creating a new Drupal 8 site; then, before installing Drupal, set your site to git mode and do the following from your local machine:
-
+```
 $ git clone git@github.com:pantheon-systems/drops-8-composer.git my-site
 $ cd my-site
 $ composer install
@@ -22,7 +22,7 @@ $ git add -A .
 $ git commit -m “web and vendor directory from composer install”
 $ git remote set-url origin ssh://ID@ID.drush.in:2222/~/repository.git
 $ git push --force origin master
-
+```
 Replace my-site with the name that you gave your Pantheon site, and replace ssh://ID@ID.drush.in:2222/~/repository.git with the URL from the middle of the SSH clone URL from the Connection Info popup dialog on your dashboard.
 
 ## Updating Your Site
